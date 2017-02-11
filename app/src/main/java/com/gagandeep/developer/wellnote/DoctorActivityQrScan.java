@@ -12,14 +12,10 @@ import android.widget.Toast;
 
 import com.google.zxing.Result;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.StringReader;
 
@@ -159,7 +155,7 @@ public class DoctorActivityQrScan extends AppCompatActivity implements ZXingScan
                 SharedPreferences.Editor editor=preferences.edit();
                 editor.putInt("reg",1);
                 editor.commit();
-                Intent intent=new Intent(DoctorActivityQrScan.this, Test.class);
+                Intent intent=new Intent(DoctorActivityQrScan.this, TabLayoutActivity.class);
                 startActivity(intent);
             }
         }

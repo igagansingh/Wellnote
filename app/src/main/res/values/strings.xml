@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Wellnote</string>
+
+    <string name="reports">Reports</string>
+    <string name="prescription">Prescription</string>
+    <string name="stats">Statistics</string>
+    <string name="personal_details">User Details</string>
+
 </resources>

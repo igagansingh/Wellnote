@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".DoctorActivity" />
         <activity android:name=".DoctorActivityQrScan" />
-        <activity android:name=".Test"></activity>
+        <activity android:name=".TabLayoutActivity" />
     </application>
 
 </manifest>
