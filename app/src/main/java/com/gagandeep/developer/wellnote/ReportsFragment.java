@@ -15,6 +15,7 @@ public class ReportsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_reports_fragment, container, false);
 
+        
         return rootView;
     }
 }
