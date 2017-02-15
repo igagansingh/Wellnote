@@ -1,21 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_personal_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
     tools:context="com.gagandeep.developer.wellnote.PersonalFragment">
 
-    <TextView
-        android:text="@string/personal_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="186dp"
-        android:id="@+id/textView5" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Aadhaar ID"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/a_id"
+            android:text="NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/name"
+            android:text="NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Gender"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/gender"
+            android:text="NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Age"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/age"
+            android:text="NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Your State"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/state"
+            android:text="NAME"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Pincode"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/pincode"
+            android:text="NAME"/>
+    </LinearLayout>
+
+</LinearLayout>

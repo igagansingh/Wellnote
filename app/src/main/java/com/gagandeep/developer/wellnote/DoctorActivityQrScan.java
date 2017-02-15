@@ -18,6 +18,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import java.io.StringReader;
+import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -28,6 +29,7 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 public class DoctorActivityQrScan extends AppCompatActivity implements ZXingScannerView.ResultHandler{
 
+    ArrayList<String> finalStuff;
     private ZXingScannerView mScannerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +105,19 @@ public class DoctorActivityQrScan extends AppCompatActivity implements ZXingScan
             String loc=string[5];
             String state=string[6];
             String pc=string[7];
+            finalStuff=new ArrayList<>();
+            finalStuff.add(uid);
+            finalStuff.add(name);
+            finalStuff.add(gender);
+            finalStuff.add(yob);
+            finalStuff.add(house);
+            finalStuff.add(loc);
+            finalStuff.add(state);
+            finalStuff.add(pc);
+
+            TinyDB tinyDB = new TinyDB(getApplicationContext());
+            tinyDB.putListString("personalDetail", finalStuff);
+
             Log.d("DoctorActivityQrScan", "BACKGROUND CHALA");
 //            JSONObject jsonObject=new JSONObject();
             String response="1";

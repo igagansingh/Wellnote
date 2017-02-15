@@ -34,10 +34,10 @@ public class GraphActivity extends AppCompatActivity {
         if(graphType.equals("Blood Pressure")){
             LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
                     new DataPoint(78,91),
-                    new DataPoint(91,80),
-                    new DataPoint(80,78),
-                    new DataPoint(78,80),
-                    new DataPoint(80,84)
+                    new DataPoint(80,91),
+                    new DataPoint(68,78),
+                    new DataPoint(72,135),
+                    new DataPoint(80,95)
             });
             graph.addSeries(series);
         }
